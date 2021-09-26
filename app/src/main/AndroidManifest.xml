@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.track">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.IPActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".activity.FriendListActivity" />
+        <activity android:name=".activity.UserListActivity" />
+        <activity android:name=".activity.RequestActivity" />
+        <activity android:name=".activity.ShopListActivity" />
+        <activity android:name=".activity.OffersActivity" />
+        <activity android:name=".activity.FriendLocationActivity" />
+        <activity android:name=".activity.ShopLocationActivity" />
+        <activity android:name=".activity.OfferDetailsActivity" />
+
+        <service android:name=".service.wifi_service" />
+        <service android:name=".service.direction_service" />
+        <service android:name=".service.notification_service"/>
+        <activity android:name=".activity.ChatActivity"></activity>
+    </application>
+
+</manifest>
